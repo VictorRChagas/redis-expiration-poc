@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "4f7fc2ce-6699-4fca-82b3-7796d6eb337e",
+		"name": "POC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9379525"
+	},
+	"item": [
+		{
+			"name": "Find By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fcc6606b-8da9-480a-8a34-463a5fc95a1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fcc6606b-8da9-480a-8a34-463a5fc95a1a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save New Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"fcc6606b-8da9-480a-8a34-463a5fc95a1a\",\r\n    \"message\": \"testando 123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fcc6606b-8da9-480a-8a34-463a5fc95a1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fcc6606b-8da9-480a-8a34-463a5fc95a1a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
